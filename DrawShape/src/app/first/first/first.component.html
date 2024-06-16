@@ -1,0 +1,23 @@
+<div class="first-container">
+    <h1 class="text">First Component</h1>
+    <div class="select-container">
+        <select name="shapeO" id="shape" [(ngModel)]="shapeO">
+            <option value="" disabled selected hidden>Select Shape</option>
+            <option [value]="shape" *ngFor="let shape of shapes">
+                {{shape}}
+            </option>
+        </select>
+        <select name="colorO" id="color" [(ngModel)]="colorO">
+            <option value="" disabled selected hidden>Select Color</option>
+            <option [value]="color" *ngFor="let color of colors">
+                {{color}}
+            </option>
+        </select>
+
+        <button [disabled]="shapeO.length === 0 || colorO.length === 0" (click)="DrawShape()">Draw</button>
+    </div>
+
+    <div class="output">
+        <div class="shape {{shapeClass}}"></div>
+    </div>
+</div>

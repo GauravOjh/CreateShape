@@ -1,0 +1,43 @@
+.first-container{
+    padding: 124px;
+    background: #38b5db;
+    width: 40%;
+    margin-left: 340px;
+    position: relative;
+}
+
+.text{
+    color:#333;
+    margin:40px;
+    position: absolute;
+    top: -23px;
+    left: 2px;
+}
+
+select{
+    width: 149px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.select-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+button{
+    width: 198px;
+    height: 32px;
+    background: #098a9a;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+}
